@@ -21,8 +21,8 @@ for cdir , dirs , files in os.walk(x):
 #Grab the required whatsapp group/user		
 driver.find_element_by_xpath('//span[@title = "{}"]'.format(name)).click()
 print("everything is set! when it's time , your message and file will be automatically sent! good night" )
-#scheduling using datetime
 time.sleep(3)
+#scheduling using datetime
 while True : 
 	if dt(dt.now().year,dt.now().month, dt.now().day,9,0,0,0)< dt.now() < dt(dt.now().year,dt.now().month,dt.now().day, 9, 15, 0 ,0):
 #using xpath to grab the message box and clicking on the send button		
