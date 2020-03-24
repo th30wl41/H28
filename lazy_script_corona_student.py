@@ -24,7 +24,7 @@ print("everything is set! when it's time , your message and file will be automat
 #scheduling using datetime
 time.sleep(3)
 while True : 
-	if dt(dt.now().year,dt.now().month, dt.now().day,9,00,0,0)< dt.now() < dt(dt.now().year,dt.now().month,dt.now().day, 9, 15, 0 ,0):
+	if dt(dt.now().year,dt.now().month, dt.now().day,9,0,0,0)< dt.now() < dt(dt.now().year,dt.now().month,dt.now().day, 9, 15, 0 ,0):
 #using xpath to grab the message box and clicking on the send button		
 		msg_box = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[4]/div/footer/div[1]/div[2]/div' )
 		time.sleep(3)
