@@ -25,11 +25,12 @@ time.sleep(3)
 #scheduling using datetime
 while True : 
 	if dt(dt.now().year,dt.now().month, dt.now().day,9,0,0,0)< dt.now() < dt(dt.now().year,dt.now().month,dt.now().day, 9, 15, 0 ,0):
-#using xpath to grab the message box and clicking on the send button		
+#using xpath to grab the message box  		
 		msg_box = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[4]/div/footer/div[1]/div[2]/div' )
 		time.sleep(3)
 		for i in range(count) :
 			msg_box.send_keys(msg)
+#using class name to click on the send button			
 			driver.find_element_by_class_name('_3M-N-').click()
 		time.sleep(5)
 #here we are using xpath again to access the file sending buttons		
